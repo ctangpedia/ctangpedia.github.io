@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <title>Usage Instructions for Werewolf Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>Usage Instructions for Werewolf Bot</h1>
+  <p><b>Table of Contents</b></p>
+  <ol>
+    <li><a href="#commands">Commands</a></li>
+    <li><a href="#rolecodes">Role codes</a></li>
+  </ol>
+  <h2 id="commands">Commands&nbsp;<a href="#" id="ancommand" title="copy link">#</a></h2>
+  <h3>!help</h3>
+  <p>Provides basic help in Discord (which isn't really that helpful)</p>
+  <h3>!rolelist</h3>
+  <p>**This command is available for players with <b>"Dead"</b> role and <b>MC(s)</b> only.</p>
+  <p>**To prevent accidentally leaking the list out in game, this command can only be used in the <b>#spectators</b> channel.</p>
+  <p>Sends out role list. Example:</p>
+  <pre>1. seer
+2. village
+3. wolf
+4. village
+5. idiot
+6. wolf
+7. witch</pre>
+  <h3>!endgame</h3>
+  <p>**This command is available for <b>MC(s)</b> only.</p>
+  <p>Should only be used when game ends. Remove wolves' permission to view wolf discussion channel.</p>
+  <p>
+  <h2 id="rolecodes">Role codes</h2>
+  <script>
+    //copy text to clipboard https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript#answer-30810322
+    function cttc(text) {
+      if (!navigator.clipboard) {
+        console.warn(":facepalm: seriously...");
+        return;
+      }
+      navigator.clipboard.writeText(text).then(function() {
+        console.log('copied link to clipboard');
+      }, function(err) {
+        console.error('Error: could not copy text:', err);
+      });
+    }
+    document.getElementById("ancommand").addEventListener("click",(e)=>{
+      e.preventDefault();
+      cttc("https://ctangpedia.github.io/ww/usage.html#commands");
+    })
+  </script>
+</body>
+</html>
