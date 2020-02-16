@@ -3,15 +3,18 @@
 <head>
   <title>Usage Instructions for Werewolf Bot</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>.anchor{font-size:80%;}</style>
 </head>
 <body>
   <h1>Usage Instructions for Werewolf Bot</h1>
   <p><b>Table of Contents</b></p>
   <ol>
+    <li><a href="#mcprocedure">Procedure for MC</a></li>
     <li><a href="#commands">Commands</a></li>
     <li><a href="#rolecodes">Role codes</a></li>
   </ol>
-  <h2 id="commands">Commands&nbsp;<a href="#" id="ancommand" title="copy link">#</a></h2>
+  <h2 id="mcprocedure">Procedure for MC&nbsp;<a href="#" id="anmcprocedure" class="anchor" title="copy link">#</a></h2>
+  <h2 id="commands">Commands&nbsp;<a href="#" id="ancommand" class="anchor" title="copy link">#</a></h2>
   <h3>!help</h3>
   <p>Provides basic help in Discord (which isn't really that helpful)</p>
   <h3>!rolelist</h3>
@@ -29,7 +32,20 @@
   <p>**This command is available for <b>MC(s)</b> only.</p>
   <p>Should only be used when game ends. Remove wolves' permission to view wolf discussion channel.</p>
   <p>
-  <h2 id="rolecodes">Role codes</h2>
+  <h2 id="rolecodes">Role codes&nbsp;<a href="#" id="anrolecodes" class="anchor" title="copy link">#</a></h2>
+  <p>七人局：</p>
+  <p>2狼+2民+女巫+預言家+獵人 --> <code>w2v2wsh</code><br>
+     2狼+2民+女巫+預言家+白癡 --> <code>w2v2wsi</code><br>
+     2狼+2民+女巫+預言家+騎士 --> <code>w2v2wsk</code></p>
+  <p>八人局：</p>
+  <p>狼王+2狼+2民+女巫+預言家+獵人 --> <code>meht</code></p>
+  <p>九人局：</p>
+  <p>3狼+3民+女巫+預言家+獵人 --> <code>w3v3wsh</code></p>
+  <p>十人局：</p>
+  <p>狼王+2狼+3民+女巫+預言家+獵人+騎士 --> <code>wkw2v3wshk</code></p>
+  <p>十二人局：</p>
+  <p>狼王+3狼+4民+女巫+預言家+獵人+騎士 --> <code>wkw3v4wshk</code></p>
+
   <script>
     //copy text to clipboard https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript#answer-30810322
     function cttc(text) {
@@ -43,10 +59,18 @@
         console.error('Error: could not copy text:', err);
       });
     }
+    document.getElementById("anmcprocedure").addEventListener("click",(e)=>{
+      e.preventDefault();
+      cttc("https://ctangpedia.github.io/ww/usage.html#mcprocedure");
+    });
     document.getElementById("ancommand").addEventListener("click",(e)=>{
       e.preventDefault();
       cttc("https://ctangpedia.github.io/ww/usage.html#commands");
-    })
+    });
+    document.getElementById("anrolecodes").addEventListener("click",(e)=>{
+      e.preventDefault();
+      cttc("https://ctangpedia.github.io/ww/usage.html#rolecodes");
+    });
   </script>
 </body>
 </html>
